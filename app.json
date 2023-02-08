@@ -13,33 +13,36 @@
     "formation": {
         "web": {
             "quantity": 0
+            "size": "eco"
         },
         "worker": {
             "quantity": 1,
-            "size": "basic"
+            "size": "eco"
         }
     },
     "env": {
         "RSSBOT_TOKEN": {
             "description": "Telegram Bot Token from @BotFather",
+            "value": "5598786459:AAG_a-Nh7gxV9A1v-XYmsX5Sn7Z3qg7-HoE",
             "required": true
         },
         "DATABASE_URL": {
             "description": "connection string of other c/s dbms",
+            "value": "postgres://gxpohmai:z9FeK2akqTwf2LGw_QK2DAbFD9h4tDWm@batyr.db.elephantsql.com/gxpohmai",
             "required": false
         },
         "RSSBOT_LANG": {
-            "value": "zh-cn",
+            "value": "id",
             "description": "default language for new user, fall back language for string without a corresponding translation",
             "required": false
         },
         "RSSBOT_ITEM_NUM": {
-            "value": "10",
+            "value": "1",
             "description": "Send up to `item_num` messages at a time",
             "required": false
         },
         "RSSBOT_FETCH_GAP": {
-            "value": "5m",
+            "value": "1m",
             "description": "fetch_gap can be set in how many minutes or hours. m for minute, h for hour for example, 5m means every 5 minutes, 1h means every 1 hour.",
             "required": false
         },
