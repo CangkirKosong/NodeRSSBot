@@ -11,11 +11,8 @@
         }
     ],
     "formation": {
-        "web": {
-            "quantity": 0
-        },
         "worker": {
-            "quantity": 1,
+            "quantity": 0,
             "size": "eco"
         }
     },
