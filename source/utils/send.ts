@@ -71,11 +71,11 @@ const send = async (
         const feedItems = toSend;
         subscribers.map(async (subscribe) => {
             const userId = subscribe.user_id;
-            let text = `%2Fmirror `;
+            let text = `/mirror `;
             feedItems.forEach(function (item) {
                 text += `${item.link.trim()} \nFeed From: ${sanitize(feed.feed_title)} as ${sanitize(
                     item.title
-                )}</a>`;
+                )}`;
             });
             try {
                 await bot.telegram.sendMessage(userId, text, {
